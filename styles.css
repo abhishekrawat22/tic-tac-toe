@@ -1,0 +1,66 @@
+body {
+    background-color: beige;
+    font-family: 'Poppins', sans-serif;
+    min-height: 95vh;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    text-align: center;
+}
+
+.game-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 102px;
+    margin: auto;
+}
+
+button {
+    background-color: transparent;
+    border: solid 1px #323232;
+    color: #323232;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.game-wrapper button {
+    width: 34px;
+    height: 34px;
+}
+
+.game-wrapper button:disabled {
+    cursor: not-allowed;
+}
+
+.game-wrapper button:first-child,
+.game-wrapper button:nth-child(4),
+.game-wrapper button:nth-child(7) {
+    border-left-color: transparent;;
+}
+
+.game-wrapper button:nth-child(3),
+.game-wrapper button:nth-child(6),
+.game-wrapper button:last-child {
+    border-right-color: transparent;;
+}
+
+.game-wrapper button:first-child,
+.game-wrapper button:nth-child(2),
+.game-wrapper button:nth-child(3) {
+    border-top-color: transparent;
+}
+
+.game-wrapper button:nth-child(7),
+.game-wrapper button:nth-child(8),
+.game-wrapper button:last-child {
+    border-bottom-color: transparent;
+}
+
+button[type="reset"],
+.play-again {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
